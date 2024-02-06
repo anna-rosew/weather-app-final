@@ -1,12 +1,20 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <p>Hello</p>
-        <btn className="primary">Yo</btn>
+        <Weather />
+        <footer>
+          This project was coded by{" "}
+          <a href="https://www.annarosewain.com/">Anna-Rose Wain</a>
+          and{" "}
+          <a href="https://github.com/anna-rosew/weather-app-final">
+            open-sourced on GitHub
+          </a>
+        </footer>
       </div>
     </div>
   );
