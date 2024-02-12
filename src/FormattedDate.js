@@ -26,6 +26,4 @@ export default function FormattedDate(props) {
       {day} {hours}:{minutes}
     </div>
   );
-
-  return "Wednesday 10:00";
 }
