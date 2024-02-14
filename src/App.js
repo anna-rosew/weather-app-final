@@ -9,9 +9,19 @@ function App() {
         <Weather defaultCity="London" />
         <footer>
           This project was coded by{" "}
-          <a href="https://www.annarosewain.com/">Anna-Rose Wain</a>
+          <a
+            href="https://www.annarosewain.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Anna-Rose Wain
+          </a>
           and{" "}
-          <a href="https://github.com/anna-rosew/weather-app-final">
+          <a
+            href="https://github.com/anna-rosew/weather-app-final"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             open-sourced on GitHub
           </a>
         </footer>
