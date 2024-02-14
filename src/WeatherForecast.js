@@ -11,7 +11,7 @@ export default function WeatherForecast() {
           <WeatherIcon code="09d" size={36} />
           <div className="WeatherForecast-temp">
             <span className="WeatherForecast-temp-max">12°</span>
-            <span className="WeatherForecast-temp-max">10°</span>
+            <span className="WeatherForecast-temp-min">10°</span>
           </div>
         </div>
       </div>
