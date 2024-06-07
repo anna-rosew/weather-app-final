@@ -7,6 +7,18 @@
 }
 
 .App footer {
-  font-size: 11px;
-  margin: 20px, 0;
+  display: block;
+  font-size: 15px;
+  margin-top: 30px;
+  text-align: center;
+  color: #776565;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

@@ -14,7 +14,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Anna-Rose Wain
+            Anna-Rose Wain{" "}
           </a>
           and{" "}
           <a
