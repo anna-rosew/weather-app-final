@@ -1,12 +1,15 @@
+/* Weather Forecast Container */
 .WeatherForecast {
   text-align: center;
 }
 
+/* Minimum Temperature */
 .WeatherForecast-temp-min {
   opacity: 0.6;
   margin-left: 5px;
 }
 
+/* Day */
 .WeatherForecast-day {
   font-size: 20px;
 }
