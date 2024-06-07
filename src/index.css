@@ -1,6 +1,12 @@
+#root {
+  background-color: #ebf2fe;
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-family: arial, sans-serif;
+  background-color: #ebf2fe;
 }
 
 code {

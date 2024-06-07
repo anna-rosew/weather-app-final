@@ -3,10 +3,12 @@ import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import Photo from "./Photo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  let [photo, setPhoto] = useState(null);
 
   function handleResponse(response) {
     setWeatherData({
@@ -32,10 +34,21 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
+  function handlePexelsResponse(response) {
+    setPhoto(response.data.photos);
+    console.log(response.data.photos.url);
+  }
+
   function search() {
     const apiKey = "515c9ddbeb3cda9061acfab71031839e";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+
+    let pexelsApiKey =
+      "HjgfexSBpptXz3ld1CCd6cvtmCgkgS1FGrrkjjPDlgvDkuhFchkysBbx";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${city}&per_page=10`;
+    let headers = { Authorization: `${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   if (weatherData.ready) {
@@ -63,6 +76,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
+        <Photo photo={photo} />
       </div>
     );
   } else {

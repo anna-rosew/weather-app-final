@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .App {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 100vh;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .App footer {
