@@ -97,48 +97,6 @@
   top: -34px;
 }
 
-/* Additional Styling for Project Cards */
-.custom-gap.work-example-card {
-  background-image: url("../imgs/blender-rookie.png");
-  transition: background-image 0.3s ease;
-}
-
-.custom-gap.work-example-card.project-1:hover {
-  background-image: url("../imgs/blender-rookie2.png");
-}
-
-.custom-gap.work-example-card.project-2 {
-  background-image: url("../imgs/sip-synth.png");
-}
-
-.custom-gap.work-example-card.project-2:hover {
-  background-image: url("../imgs/sip-synth2.png");
-}
-
-.custom-gap.work-example-card.project-3 {
-  background-image: url("../imgs/weather-app.png");
-}
-
-.custom-gap.work-example-card.project-3:hover {
-  background-image: url("../imgs/weather-app2.png");
-}
-
-.custom-gap.work-example-card.project-4 {
-  background-image: url("../imgs/rose-long.png");
-}
-
-.custom-gap.work-example-card.project-4:hover {
-  background-image: url("../imgs/rose-long2.png");
-}
-
-.custom-gap.work-example-card.project-5 {
-  background-image: url("../imgs/world-clock.png");
-}
-
-.custom-gap.work-example-card.project-5:hover {
-  background-image: url("../imgs/world-clock2.png");
-}
-
 /* Adjust columns for small screens */
 .col-sm-2 {
   flex: 0 0 50%;
