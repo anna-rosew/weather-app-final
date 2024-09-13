@@ -4,9 +4,6 @@ import "../styles/Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
-// Import your SVG icon here
-import SearchIcon from "../styles/imgs/search.svg";
-
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -55,14 +52,11 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-3">
-              <button type="submit" className="submit-button">
-                {/* Default text for larger screens */}
-                <span className="d-none d-md-inline">Search</span>
-                {/* SVG icon for mobile */}
-                <span className="d-md-none">
-                  <img src={SearchIcon} alt="Search" />
-                </span>
-              </button>
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
             </div>
           </div>
         </form>
