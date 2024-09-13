@@ -40,6 +40,48 @@
   background-color: #776565;
 }
 
+/* Submit Button with SVG Icon */
+.submit-button {
+  border-radius: 21px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide text on mobile */
+.submit-button .d-none {
+  display: none;
+}
+
+/* Display SVG icon on mobile */
+@media (max-width: 768px) {
+  .submit-button {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .submit-button .d-md-inline {
+    display: none;
+  }
+
+  .submit-button .d-md-none {
+    display: flex;
+  }
+
+  .submit-button svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+}
+
 /* Weather Details */
 .Weather ul {
   margin: 0;
@@ -94,4 +136,65 @@
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+/* Additional Styling for Project Cards */
+.custom-gap.work-example-card {
+  background-image: url("../imgs/blender-rookie.png");
+  transition: background-image 0.3s ease;
+}
+
+.custom-gap.work-example-card.project-1:hover {
+  background-image: url("../imgs/blender-rookie2.png");
+}
+
+.custom-gap.work-example-card.project-2 {
+  background-image: url("../imgs/sip-synth.png");
+}
+
+.custom-gap.work-example-card.project-2:hover {
+  background-image: url("../imgs/sip-synth2.png");
+}
+
+.custom-gap.work-example-card.project-3 {
+  background-image: url("../imgs/weather-app.png");
+}
+
+.custom-gap.work-example-card.project-3:hover {
+  background-image: url("../imgs/weather-app2.png");
+}
+
+.custom-gap.work-example-card.project-4 {
+  background-image: url("../imgs/rose-long.png");
+}
+
+.custom-gap.work-example-card.project-4:hover {
+  background-image: url("../imgs/rose-long2.png");
+}
+
+.custom-gap.work-example-card.project-5 {
+  background-image: url("../imgs/world-clock.png");
+}
+
+.custom-gap.work-example-card.project-5:hover {
+  background-image: url("../imgs/world-clock2.png");
+}
+
+/* Adjust columns for small screens */
+.col-sm-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Flexbox adjustments for rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.row .col-md-6 {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
 }

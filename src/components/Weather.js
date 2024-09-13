@@ -4,7 +4,8 @@ import "../styles/Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
-//make an api call for pexels to render a photo of the city
+// Import your SVG icon here
+import SearchIcon from "../styles/imgs/search.svg";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -27,7 +28,6 @@ export default function Weather(props) {
   function handleSubmit(event) {
     event.preventDefault();
     search();
-    //search for city
   }
 
   function handleCityChange(event) {
@@ -55,11 +55,14 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
-              />
+              <button type="submit" className="submit-button">
+                {/* Default text for larger screens */}
+                <span className="d-none d-md-inline">Search</span>
+                {/* SVG icon for mobile */}
+                <span className="d-md-none">
+                  <img src={SearchIcon} alt="Search" />
+                </span>
+              </button>
             </div>
           </div>
         </form>
