@@ -1,17 +1,14 @@
-/* Root Styles */
 #root {
   background-color: #ebf2fe;
   height: 100vh;
 }
 
-/* Body Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   background-color: #ebf2fe;
 }
 
-/* Code Styles */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
